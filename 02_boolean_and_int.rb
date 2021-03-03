@@ -25,6 +25,9 @@ puts "'abc': #{'abc' ? true : false}"       # true
 puts "'': #{'' ? true : false}"          # true
 puts "' ': #{' ' ? true : false}"         # true
 
+## .nil? .empty? .blank? .present?
+## https://mgleon08.github.io/blog/2015/12/16/ruby-on-rail-nil-empty-blank-present/
+
 ## nil?
 puts "\n\nnil?"
 puts "nil.nil?: #{nil.nil?}"
@@ -61,5 +64,25 @@ puts "[1, 2].any?: #{[1, 2].any?}"
 puts "{a: 1}.any?: #{{a: 1}.any?}"
 
 ## blank?
+# nil.blank?     #true
+# [].blank?      #true
+# {}.blank?      #true
+# "".blank?      #true
+# " ".blank?     #true
+# "abc".blank?   #false
+# 123.blank?     #false
+# true.blank?    #false
+# false.blank?   #true
+# 0.blank?       #false
 
 ## present?
+# nil.present?   #false
+# [].present?    #false
+# {}.present?    #false
+# "".present?    #false
+# " ".present?   #false
+# "abc".present? #true
+# 123.present?   #true
+# true.present?  #true
+# false.present? #false
+# 0.present?     #true
