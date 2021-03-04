@@ -1,3 +1,21 @@
+# Ruby 資料型別
+"""
+BasicObject
+    |
+  Object  ---  Numeric ---  Integer  ---  Fixnum
+           |            |             |-  Bignum
+           |            |-   Float
+           |-  NilClass
+           |-  TrueClass
+           |-  FalseClass
+           |-  String
+           |-  Symbol
+           |-  Array
+           |-  Hash
+           |-  Range
+           |-  Module   ---  Class
+"""
+
 # Boolean and Int
 
 ## ----------------------------------
