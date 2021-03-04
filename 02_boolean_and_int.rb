@@ -1,6 +1,6 @@
 # Boolean and Int
 
-
+## ----------------------------------
 ## Boolean
 puts "true class is: #{true.class}"
 puts "false class is: #{false.class}"
@@ -86,3 +86,43 @@ puts "{a: 1}.any?: #{{a: 1}.any?}"
 # true.present?  #true
 # false.present? #false
 # 0.present?     #true
+
+
+## ----------------------------------
+## 變數賦值
+puts "\n\n變數賦值"
+
+a = 90
+a -= 5
+puts a
+# a++  ruby not support ++ --
+a = 13
+a /= 3  #除整數
+puts a
+
+a = 13
+a /= 3.0  #除小數點
+puts a
+
+
+## ----------------------------------
+## 底數
+## TODO 這邊目前與python並沒有全部對起來，之後需要再回頭整理
+puts "\n\n底數"
+
+### code 轉十進制
+### 二進制
+puts "0b10: #{0b10} #{0b10.class}"
+puts "0B10: #{0B10}"
+### 八進制
+puts "0o11 #{0o11} #{0o11.class}"
+puts "0O11 #{0O11}"
+### 十六進制
+puts "0x10: #{0x10} #{0x10.class}"
+puts "0X10: #{0X10}"
+
+### 字串轉進制 預設是十進制
+puts "10".to_i(2)
+puts "10".to_i(16)
+puts "10".to_i(17)
+puts "10".to_i(8)
