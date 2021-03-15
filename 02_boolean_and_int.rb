@@ -45,6 +45,7 @@ puts "' ': #{' ' ? true : false}"         # true
 
 ## .nil? .empty? .blank? .present?
 ## https://mgleon08.github.io/blog/2015/12/16/ruby-on-rail-nil-empty-blank-present/
+## https://ithelp.ithome.com.tw/articles/10205968
 
 ## nil?
 puts "\n\nnil?"
@@ -105,6 +106,8 @@ puts "{a: 1}.any?: #{{a: 1}.any?}"
 # false.present? #false
 # 0.present?     #true
 
+## presence : present? 簡化的應用
+# params[:something] if params[:something].present?
 
 ## ----------------------------------
 ## 變數賦值

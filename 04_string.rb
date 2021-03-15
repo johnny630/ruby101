@@ -130,6 +130,8 @@ puts word.rstrip
 # index(regexp [, offset]) → fixnum or nil
 # include 包含
 # qul?, == 相等
+# start_with?
+# end_with?
 puts '----------------------'
 puts '搜尋或選擇'
 word = 'What the ...!!?'
@@ -140,3 +142,63 @@ puts word.include?('the')
 puts word.eql?('What the ...!!?')
 puts word == 'What the ...!!?'
 
+puts 'find by []'
+puts word['What']
+puts word['xxx']
+# rails
+# puts word.in?('hat')
+# puts word.n?('zz')
+
+puts word.start_with?("What")
+puts word.start_with?("the")
+
+puts word.end_with?("What")
+puts word.end_with?("!!?")
+
+
+## 字串判斷
+# ascii_only?
+# casecmp?
+# unicode_normalized?
+
+
+## 大小寫
+puts '----------------------'
+puts '大小寫'
+word = 'what the ...!!?'
+
+puts word.capitalize
+puts word.upcase
+puts word.downcase
+puts word.swapcase
+
+
+## 格式化對齊
+# center(width, padstr=' ')
+# rjust(integer, padstr=' ')
+# ljust(integer, padstr=' ')
+puts '----------------------'
+puts '格式化對齊'
+
+puts "hello".center(4)
+puts "hello".center(20)
+puts "hello".center(20, '123')
+
+puts "hello".rjust(4)
+puts "hello".rjust(20)
+puts "hello".rjust(20, '123')
+
+puts "hello".ljust(4)
+puts "hello".ljust(20)
+puts "hello".ljust(20, '123')
+
+
+
+## 格式化
+# %
+# #{}
+puts '----------------------'
+puts '格式化'
+
+puts "Processing of the data has finished in %0.2f seconds" % [2.6697]
+puts "Processing of the data has finished in #{2.66} seconds"
