@@ -16,7 +16,7 @@ name_list = ['johnny', 'marry', 'eric']
 puts name_list[0]
 
 #### 取負值 是從結尾往回算
-puts name_list[-1]
+puts name_list[-1]  
 
 #### offset 必須是有效的，超出會回傳nil
 puts name_list[4]

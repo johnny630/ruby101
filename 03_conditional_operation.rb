@@ -89,7 +89,7 @@ puts("'' || true:", '' || true)
 puts("'' || false:", '' || false)
 
 
-# not !
+# not !effective_date
 puts("\n\nnot !邏輯運算子")
 puts(not(true or false))
 puts(not([1, 2]))

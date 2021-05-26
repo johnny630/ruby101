@@ -11,6 +11,26 @@ ans = nums.collect do |i|
 end
 p ans
 
+# hash to array
+h = {'a a': 1, 'b b': 2}
+p h.map{ |k, v| {key: k, value: v, other: 'other'} }
+
+
+my_hash = {a: 1, b: 2, c: 3}
+my_hash.each do |key, value|
+  my_hash[key] = value * 2
+end
+p my_hash
+
+
+def convert_hash(data)
+  data.each do |key, value|
+    data[key] = value * 2
+  end
+end
+my_hash2 = {a: 4, b: 5, c: 6}
+convert_hash(my_hash2)
+p my_hash2
 
 ## select (like python filter)  /reject 是相反的
 # array.select{ |n| expression } 
